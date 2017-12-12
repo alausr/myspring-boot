@@ -20,4 +20,10 @@ public class HelloController {
         String name = ctx.getEnvironment().getProperty("username1");
         return "hello:" + name;
     }
+
+    @GetMapping("/hello2")
+    public String hello2(){
+        String name = ctx.getEnvironment().getProperty("username1");
+        return "hello:" + name;
+    }
 }
